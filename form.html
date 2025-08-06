@@ -61,42 +61,59 @@
                 <h1 class="fs-2 mb-4">Nuovo libro</h1>
             </div>
 
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                    aria-describedby="basic-addon1">
-            </div>
-
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Recipient’s username"
-                    aria-label="Recipient’s username" aria-describedby="basic-addon2">
-                <span class="input-group-text" id="basic-addon2">@example.com</span>
-            </div>
-
-            <div class="mb-3">
-                <label for="basic-url" class="form-label">Your vanity URL</label>
-                <div class="input-group">
-                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name-author" class="form-label">Nome Autore</label>
+                    <input type="name" class="form-control" id="inputEmail4"
+                        placeholder="Inserisci il nome dell'autore">
                 </div>
-                <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
-            </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Cognome Autore</label>
+                    <input type="password" class="form-control" id="inputPassword4"
+                        placeholder="Inserisci il cognome dell'autore">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="inputAddress"
+                        placeholder="Inserisci il titolo del libro">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Genere</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Scegli il genere</option>
+                        <option>Giallo</option>
+                        <option>Avventura</option>
+                        <option>Poesia</option>
+                        <option>Comico</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputCity" class="form-label">Anno di Pubblicazione</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Inserisci l'anno">
+                </div>
 
-            <div class="input-group mb-3">
-                <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                <span class="input-group-text">.00</span>
-            </div>
-
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                <span class="input-group-text">@</span>
-                <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">With textarea</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
-            </div>
+                <div class="col-md-4">
+                    <label for="inputZip" class="form-label">ISBN#</label>
+                    <input type="text" class="form-control" id="inputZip" placeholder="Inserisci il codice ISBN#">
+                </div>
+                <hr>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Disponibile anche in digitale
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Aggiungi il libro</button>
+                </div>
+            </form>
         </div>
     </main>
 </body>
